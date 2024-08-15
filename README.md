@@ -14,6 +14,8 @@ New cave is generated every time the app is initialized. Following animation sho
 
 The Red keep following the Green around using Dijkstra's Algorithm (for Green) until it caches it
 
+<img src="https://github.com/rahul38888/game-n-algo/blob/main/media/Cave_the_game.gif?raw=true" alt="drawing" width="500"/>
+
 ## Controls
 | Key        | Function                               |
 |------------|----------------------------------------|
