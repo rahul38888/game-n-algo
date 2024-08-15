@@ -1,7 +1,7 @@
 import pygame
 import random
 
-from datahandler.screencomponents import coordinate_map
+from src.datahandler.screencomponents import coordinate_map
 
 
 # Generated render triangle data using render points derived from layout grid data

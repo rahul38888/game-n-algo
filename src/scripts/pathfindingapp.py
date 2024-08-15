@@ -1,7 +1,7 @@
 
 
-from datahandler.layout import Layout
-from scripts.algos.pathfinder import PathFinder
+from src.datahandler.layout import Layout
+from src.scripts.algos.pathfinder import PathFinder
 
 
 # Pathfinder application uril to handle layout and pathfinder util

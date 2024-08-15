@@ -28,7 +28,7 @@ class RenderEngine:
                 self.running = False
             if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                 self.running = False
-            if self.keymap and not self.is_game:
+            if self.keymap and self.is_game:
                 self.keymap(event)
 
         if self.render:

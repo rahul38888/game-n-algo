@@ -1,7 +1,7 @@
 from app import App
-from datahandler.layout import Layout
+from src.datahandler.layout import Layout
 from render.engine import RenderEngine
-from scripts.algos.caveprocedural import CaveProcedural
+from src.scripts.algos.caveprocedural import CaveProcedural
 
 size = (120, 59)
 sq_width = 13.66

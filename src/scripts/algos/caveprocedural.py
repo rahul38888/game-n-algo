@@ -3,10 +3,10 @@ from random import random
 import itertools
 import numpy as np
 
-from datahandler.layout import Layout
-from datahandler.room import Room
-from scripts.algos.floodfill import flood_fill
-from scripts.algos.line import getLinePixels, drawLine
+from src.datahandler.layout import Layout
+from src.datahandler.room import Room
+from src.scripts.algos.floodfill import flood_fill
+from src.scripts.algos.line import getLinePixels, drawLine
 
 
 # Utiltity to generate canvas. Allowed method's order
@@ -158,11 +158,11 @@ if __name__ == '__main__':
     noise = CaveProcedural(Layout((size, size)))
 
     noise.smoothing(iterations=3)
-    for a in noise.layout.grid:
-        string = ""
-        for b in a:
-            string += "  " if not b else "%%"
-        print(string)
 
     noise.detectRooms()
     noise.connectRooms()
+    for a in noise.layout.grid:
+        string = ""
+        for b in a:
+            string += "   " if not b else "%%%"
+        print(string)

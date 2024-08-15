@@ -1,7 +1,7 @@
 from math import inf
 from queue import Queue
 
-from datahandler.layout import Layout
+from src.datahandler.layout import Layout
 
 
 # Utility to find the shortest paths from target to all accessible tiles using Dijkstra's Algorithm

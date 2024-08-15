@@ -2,13 +2,13 @@ import random
 
 import pygame
 
-from datahandler.entities import Enemy, Player, Direction
-from datahandler.layout import Layout
-from render.renderdatagenerator import render_data
-from scripts.pathfindingapp import PathFindingApp
-from scripts.algos.pathfinder import PathFinder
-from scripts.algos.caveprocedural import CaveProcedural
-from render.engine import RenderEngine
+from src.datahandler.entities import Enemy, Player, Direction
+from src.datahandler.layout import Layout
+from src.render.renderdatagenerator import render_data
+from src.scripts.pathfindingapp import PathFindingApp
+from src.scripts.algos.pathfinder import PathFinder
+from src.scripts.algos.caveprocedural import CaveProcedural
+from src.render.engine import RenderEngine
 
 
 # Actual application to initialize pygame, RenderEngine, do canvas generation and pathfinding

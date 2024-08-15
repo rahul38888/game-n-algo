@@ -2,7 +2,7 @@ import math
 import itertools
 import random
 
-from datahandler.layout import Layout
+from src.datahandler.layout import Layout
 
 
 # Definition type of Room
