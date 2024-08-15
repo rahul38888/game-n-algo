@@ -8,7 +8,9 @@
 ## Snapshot
 ![welcome.png](https://github.com/rahul38888/game-n-algo/blob/main/media/Cave.png?raw=true)
 
-New cave is generated every time the app is initialized.
+New cave is generated every time the app is initialized. Following animation shows how noise transforms into cave
+![animation.png](https://github.com/rahul38888/game-n-algo/blob/main/media/CaveGen.gif?raw=true)
+
 The Red keep following the Green around using Dijkstra's Algorithm (for Green) until it caches it
 
 ## Controls

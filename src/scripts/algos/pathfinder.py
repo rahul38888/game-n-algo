@@ -4,7 +4,7 @@ from queue import Queue
 from datahandler.layout import Layout
 
 
-# Utility to find shortest paths from target to all accessible tiles using Dijkstra's Algorithm
+# Utility to find the shortest paths from target to all accessible tiles using Dijkstra's Algorithm
 class PathFinder:
     def __init__(self):
         self.dist = None

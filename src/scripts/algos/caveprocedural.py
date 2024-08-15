@@ -1,6 +1,7 @@
 import math
 from random import random
 import itertools
+import numpy as np
 
 from datahandler.layout import Layout
 from datahandler.room import Room
@@ -24,10 +25,7 @@ class CaveProcedural:
         self.connection_radius = 1
 
         # 1: wall, 0: open
-        for x in range(self.width):
-            for y in range(self.height):
-                val = 0 if random() < 0.5 else 1 if (0< x <self.width-1 and 0<y<self.height-1) else 1
-                self.layout.grid[y][x] = val
+        self.layout.grid = (np.random.rand(self.height, self.width) > 0.5)
 
     def _neighouring_walls(self, x, y) -> float:
         n_count = 0
@@ -163,7 +161,7 @@ if __name__ == '__main__':
     for a in noise.layout.grid:
         string = ""
         for b in a:
-            string += " " if not b else "@"
+            string += "  " if not b else "%%"
         print(string)
 
     noise.detectRooms()
