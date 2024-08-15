@@ -4,6 +4,7 @@ import pygame
 # Generalized render engine wrapper
 class RenderEngine:
     def __init__(self, dimensions: list, update, render, keymap, frame_rate: int = 10, is_game: bool = True):
+        self.running = True
         self.dimensions = dimensions
 
         pygame.init()
@@ -17,16 +18,16 @@ class RenderEngine:
         self.frame_rate = frame_rate
 
         self.clock = pygame.time.Clock()
-        self.is_game =  is_game
+        self.is_game = is_game
 
     def render_once(self):
         self.clock.tick(self.frame_rate)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
+                self.running = False
             if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                running = False
+                self.running = False
             if self.keymap and not self.is_game:
                 self.keymap(event)
 
@@ -36,9 +37,8 @@ class RenderEngine:
             self.update()
 
     def start(self):
-        running = True
 
-        while running:
+        while self.running:
             self.render_once()
 
         pygame.quit()

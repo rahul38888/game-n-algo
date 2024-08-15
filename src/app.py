@@ -95,7 +95,6 @@ class App:
     def updateHandler(self):
         def update():
             if not self.is_game:
-                print(self.iterations_left)
                 if self.iterations_left:
                     self.cave.smoothing(1)
                     self.iterations_left -= 1
