@@ -6,10 +6,11 @@
 * Line algorithm me connect isolated regions
 
 ## Snapshot
-![welcome.png](https://github.com/rahul38888/game-n-algo/blob/main/media/terminal_caves.jpg?raw=true)
+<img src="https://github.com/rahul38888/game-n-algo/blob/main/media/terminal_caves.jpg?raw=true" alt="drawing" width="500"/>
 
 New cave is generated every time the app is initialized. Following animation shows how noise transforms into cave
-![animation.png](https://github.com/rahul38888/game-n-algo/blob/main/media/CaveGen.gif?raw=true)
+
+<img src="https://github.com/rahul38888/game-n-algo/blob/main/media/CaveGen.gif?raw=true" alt="drawing" width="500"/>
 
 The Red keep following the Green around using Dijkstra's Algorithm (for Green) until it caches it
 
