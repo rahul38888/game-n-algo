@@ -17,7 +17,7 @@ The Red keep following the Green around using Dijkstra's Algorithm (for Green) u
 ## Controls
 | Key        | Function                               |
 |------------|----------------------------------------|
-| Enter      | New random position for Green (target) |
+| Space      | New random position for Green (target) |
 | Arrow Keys | To move Green around the caves         |
 | Esc        | Exist                                  |
 
