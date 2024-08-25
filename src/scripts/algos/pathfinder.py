@@ -38,8 +38,8 @@ class PathFinder:
                     queued.add(n)
 
     def recalculate(self, x, y, layout: Layout):
-        prev = [[None for i in range(layout.width)] for j in range(layout.height)]
-        dist = [[inf for i in range(layout.width)] for j in range(layout.height)]
+        prev = [[None for _ in range(layout.width)] for _ in range(layout.height)]
+        dist = [[inf for _ in range(layout.width)] for _ in range(layout.height)]
 
         prev[y][x] = (x, y)
         dist[y][x] = 0
